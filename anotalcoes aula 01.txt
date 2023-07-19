@@ -1,0 +1,7 @@
+function abs() > modulo do numero em parametro
+// > round do resultado da operação para baixo 14//3 : 4
+
+tipagem 
+	def dobro(a: int) -> int:
+		dobro = a * 2
+		return dobro
