@@ -17,6 +17,7 @@ def mediaIdades(idade1:int, idade2:int, idade3:int, idade4:int) -> float:
 
 def maiorIdade(idade1:int, idade2:int, idade3:int, idade4:int) -> int:
     """
+        Recebe 4 idades e retorna a maior idade entre as 4 idades
         >>> maiorIdade(58,23,56,89)
         89
         >>> maiorIdade(88,27,16,52)

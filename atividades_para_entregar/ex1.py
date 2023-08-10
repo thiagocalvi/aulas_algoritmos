@@ -1,15 +1,7 @@
-"""
-    Ler a senha e verificar se coresponde com a senha do sistema,
-    se sim liberar o acesso caso contrario não liberar o acesso
-
-    variaveis:
-    
-"""
-
 def verificarSenha(senha:str) -> bool:
     """
         Verifica se a senha pasada como parametro corresponde a 
-        senha armazenada na variavel senhaCorreta, se forem corespondentes
+        senha armazenada na variavel senhaCorreta, se forem correspondentes
         retorna True caso contrario retorna False
 
         >>> verificarSenha('Qualquer123')
@@ -37,4 +29,4 @@ def liberarAcesso():
     else:
         print("Senha incorreta, acesso negado")
 
-
+liberarAcesso()
