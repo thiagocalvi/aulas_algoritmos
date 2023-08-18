@@ -39,14 +39,18 @@ def imprimirDados(aluno:Aluno):
     print(f'Nome : {aluno.nome}')
     print(f'Curso : {aluno.curso}')
 
-def recebeDados(ra:int, nome:str, curso:str):
+def recebeDados():
     """
         Recebe os dados do aluno e passa para função cadastrarDados e chama
         a função imprimirDados
     """
+    ra = int(input("RA do aluno: "))
+    nome = input("Nome do aluno: ")
+    curso = input("Nome do curso: ")
+
     dadosAluno = cadastrarDados(ra, nome, curso)
     imprimirDados(dadosAluno)
 
 
-
+recebeDados()
 

@@ -24,3 +24,11 @@ def classificarNome(nome:str) -> str:
         classificacao = "Mediano"
 
     return classificacao
+
+
+def main():
+    nome = input('Informe seu nome: ')
+    classificacao = classificarNome(nome)
+    print(f'Nome: {nome} \nClassificação: {classificacao}')
+
+main()

@@ -21,3 +21,11 @@ def proximaCorSemafaro(corAtual:str) -> str:
         proximaCor = "Verde"
     
     return proximaCor
+
+
+def main():
+    cor_atul = input('Informe a cor atual do semáfaro: ')
+    n_cor = proximaCorSemafaro(cor_atul)
+    print(n_cor)
+
+main()

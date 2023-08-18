@@ -30,4 +30,10 @@ def converterTempo(minutos:int) -> Tempo:
     return tempo
 
 
+def main():
+    minutos = int(input('Informe o intervalo em minutos: '))
+    tConvertido = converterTempo(minutos)
+    print(f'Horas: {tConvertido.horas}')
+    print(f'Minutos: {tConvertido.minutos}')
 
+main()
