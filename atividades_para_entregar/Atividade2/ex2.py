@@ -12,7 +12,7 @@ class Aluno:
     nome : str
     curso : str
 
-def cadastrarDados(ra:int, nome:str, curso:str):
+def cadastrarDados(ra:int, nome:str, curso:str) -> Aluno:
     """
         Cadastra os dados do aluno na estrutura de 
         dados e retorna essa estrutura
@@ -23,10 +23,10 @@ def cadastrarDados(ra:int, nome:str, curso:str):
         Aluno(ra=654321, nome='João', curso='Computação')
         
     """
-    aluno = Aluno(ra, nome, curso)
+    aluno : Aluno  = Aluno(ra, nome, curso)
     return aluno
 
-def imprimirDados(aluno:Aluno):
+def imprimirDados(aluno : Aluno):
     """
         Impremo os dados armazenados na estrutura de dados Aluno
         >>> imprimirDados(Aluno(123456, 'Pedro', 'Informatica'))
@@ -44,9 +44,9 @@ def recebeDados():
         Recebe os dados do aluno e passa para função cadastrarDados e chama
         a função imprimirDados
     """
-    ra = int(input("RA do aluno: "))
-    nome = input("Nome do aluno: ")
-    curso = input("Nome do curso: ")
+    ra : int = int(input("RA do aluno: "))
+    nome : str = input("Nome do aluno: ")
+    curso : str = input("Nome do curso: ")
 
     dadosAluno = cadastrarDados(ra, nome, curso)
     imprimirDados(dadosAluno)
