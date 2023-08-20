@@ -12,7 +12,7 @@ class Tempo:
     horas : int
     minutos : int
 
-def converterTempo(minutos:int) -> Tempo:
+def converterTempo(minutos : int) -> Tempo:
     """
         Recebe o intervalo em minutos e converte para
         horas e minutos
@@ -24,15 +24,15 @@ def converterTempo(minutos:int) -> Tempo:
     """
 
     tempo = Tempo(0,0)
-    tempo.horas = minutos // 60
-    tempo.minutos = minutos % 60
+    tempo.horas : int = minutos // 60
+    tempo.minutos : int = minutos % 60
 
     return tempo
 
 
 def main():
     minutos = int(input('Informe o intervalo em minutos: '))
-    tConvertido = converterTempo(minutos)
+    tConvertido : Tempo = converterTempo(minutos)
     print(f'Horas: {tConvertido.horas}')
     print(f'Minutos: {tConvertido.minutos}')
 

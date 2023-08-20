@@ -1,4 +1,4 @@
-def proximaCorSemafaro(corAtual:str) -> str:
+def proximaCorSemafaro(corAtual : str) -> str:
     """
         Recebe uma cor de semáfaro com entrada e 
         retorna a próxima cor que será ativada
@@ -24,8 +24,8 @@ def proximaCorSemafaro(corAtual:str) -> str:
 
 
 def main():
-    cor_atul = input('Informe a cor atual do semáfaro: ')
-    n_cor = proximaCorSemafaro(cor_atul)
-    print(n_cor)
+    cor_atul : str = input('Informe a cor atual do semáfaro: ')
+    next_cor : str = proximaCorSemafaro(cor_atul)
+    print(next_cor)
 
 main()

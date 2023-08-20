@@ -4,7 +4,7 @@
     Entradas: nome(string)
     Saída: classificação do nome(string)
 """
-def classificarNome(nome:str) -> str:
+def classificarNome(nome : str) -> str:
     """
         Classifica o nome de acordo com a quantidade
         de letra
@@ -14,7 +14,7 @@ def classificarNome(nome:str) -> str:
         'Longo'
     """
     
-    qtde_letras = len(nome)
+    qtde_letras : int = len(nome)
 
     if qtde_letras <= 4:
         classificacao = "Curto"
@@ -27,8 +27,8 @@ def classificarNome(nome:str) -> str:
 
 
 def main():
-    nome = input('Informe seu nome: ')
-    classificacao = classificarNome(nome)
+    nome : str = input('Informe seu nome: ')
+    classificacao : str = classificarNome(nome)
     print(f'Nome: {nome} \nClassificação: {classificacao}')
 
 main()
