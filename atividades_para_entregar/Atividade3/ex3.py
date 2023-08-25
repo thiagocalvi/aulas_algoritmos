@@ -26,7 +26,7 @@ def contaVotos(listaVotos:list) -> int:
         Entrada: lista com os votos (list)(string)
         Saida: quantidade de votos candidato 1 (int), candidato 2 (int), em branco (int), invalido (int),
         lista de votos invalido (list)
-          
+
         >>> contaVotos(['W','O','D','O','T','T'])
         (2, 2, 1, 1, ['D'])
 
@@ -38,7 +38,7 @@ def contaVotos(listaVotos:list) -> int:
     q_branco:int = 0
     q_invalido:int = 0
     
-    votosInvalido = []
+    votosInvalido:list = []
 
     for x in range(len(listaVotos)):
         
@@ -46,17 +46,13 @@ def contaVotos(listaVotos:list) -> int:
             q_cand1 += 1
         elif listaVotos[x] == 'T':
             q_cand2 += 1
-        elif listaVotos[x] == 'W': 
+        elif listaVotos[x] == 'W':
             q_branco += 1
         else:
             votosInvalido.append(listaVotos[x])
             q_invalido += 1
     
     return q_cand1, q_cand2, q_branco, q_invalido, votosInvalido
-
-
-
-
 
 
 def main():
