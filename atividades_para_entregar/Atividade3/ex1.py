@@ -1,6 +1,9 @@
 def encontraMaiorNumero(lista:list) -> int:
     """
-        Recebe como paramentro uma lista de dumeros, retorna o maior numero da lista e seu index
+        Recebe como paramentro uma lista de numeros, retorna o maior numero da lista e seu index
+        Entrada: Lista de numeros (list)
+        Saida: Maior numero contido na lista (number), Index do numero na lista (int)
+
         >>> encontraMaiorNumero([1,24,5,89,100,555])
         (555, 5)
 
@@ -23,6 +26,5 @@ def encontraMaiorNumero(lista:list) -> int:
 def main():
     dados = encontraMaiorNumero([1,24,5,89,100,555,0])
     print(f'Maior número da lista: {dados[0]}, na posiçao: {dados[1]}')
-
 
 main()
