@@ -1,8 +1,9 @@
 def nomeNaLista(listaNomes:list, nome:str)->int:
     """
-        Encontra todas as posicoes de ocorrencia de um nome recebido por
-        parametro na lista e retorna suas posições
-        
+        Encontra as posicoes de ocorrencia de um nome em uma lista e retorna suas posições
+        Entradas: lista de nomes, tipo lista. Nome que se quer encontrar as posições, tipo string
+        Saida: lista contendo as possições de ocorrencia do nome
+
         >>> nomeNaLista(['ana','marcos','sergio','ana'], 'ana')
         [0, 3]
         
@@ -10,9 +11,7 @@ def nomeNaLista(listaNomes:list, nome:str)->int:
         [2]
     """
 
-    indexNome = []
-
-    # listaNomes = toUpperCase(listaNomes)
+    indexNome:list = []
 
     for i in range(len(listaNomes)):
         if listaNomes[i] == nome:

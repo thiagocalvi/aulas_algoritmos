@@ -1,7 +1,8 @@
 def somaElemento(listaInteiros:list)->int:
     """
-        Recebe uma lista de inteiros e soma todos os
-        elementos e retorna essa soma
+        Recebe uma lista de inteiros e soma todos os elementos e retorna essa soma
+        Entrada: lista de numeros inteiros, tipo lista
+        Saida: resultado da soma de todos os elementos, tipo inteiro
 
         >>> somaElemento([1,2,3])
         6
@@ -11,6 +12,8 @@ def somaElemento(listaInteiros:list)->int:
     """
 
     soma:int = 0
+    
     for x in range(len(listaInteiros)):
         soma += listaInteiros[x]
+    
     return soma

@@ -1,8 +1,8 @@
 def valorMinimo(listaInteiros:list)->int:
     """
-        Encontra o valor monimo de uma lista de inteiros
-        e conta quantas vezes ele aparece na lista
-
+        Encontra o valor monimo de uma lista de inteiros e quantas vezes esse valor aparece na lista
+        Entrada: lista de numeros inteiros, tipo lista
+        Saida: quantidade de vezes que o valor minimo aparece na lista, tipo int
         >>> valorMinimo([1,5,1,7,9,1,6])
         3
         >>> valorMinimo([])
@@ -23,7 +23,7 @@ def valorMinimo(listaInteiros:list)->int:
         if valor_minimo > listaInteiros[x]:
             valor_minimo = listaInteiros[x]
 
-    #contar quantas vezes o valor minimo aparece
+    #conta quantas vezes o valor minimo aparece
     for x in range(len(listaInteiros)):
         if valor_minimo == listaInteiros[x]:
             n_aparicoes += 1
