@@ -23,6 +23,10 @@ def perfeito(num):
     divisores = []
     somaDivisores = 0
     
+    if num == 1:
+        return True
+
+
     for x in range(1,num):
         if num % x == 0:
             divisores.append(x)

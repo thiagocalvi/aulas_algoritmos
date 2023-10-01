@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-
 @dataclass
 class Estoque:
     q_bobinas:int = 100000

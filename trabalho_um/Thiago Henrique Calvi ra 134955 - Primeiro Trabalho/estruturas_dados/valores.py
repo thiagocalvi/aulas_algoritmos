@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-
 @dataclass
 class Valores:
 	valor_custo_bobina:float = 50.00
