@@ -57,7 +57,7 @@ def cadastar_pedido():
 
     #verificar se o valor de desconto oferecida é menor que o valor total de custo de produção do produto
     if nome_produto == "BOBINAS":
-        if (valores.valor_custo_bobina * quantidade_produto) >= (valores.valor_venda_painel * quantidade_produto) - valor_desconto:
+        if (valores.valor_custo_bobina * quantidade_produto) >= (valores.valor_venda_bobina * quantidade_produto) - valor_desconto:
             print("Valor do desconto muito alto")
             main()    
 
